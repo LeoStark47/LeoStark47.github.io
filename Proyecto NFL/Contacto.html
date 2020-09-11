@@ -1,0 +1,120 @@
+<html>
+<head>
+    <link rel="stylesheet" href="./css/style.css">
+    
+</head>
+<head>
+	<style>
+		* {
+				margin:0px;
+				padding:0px;
+			}
+			
+			#header {
+				margin:auto;
+				width:500px;
+				font-family:Arial, Helvetica, sans-serif;
+			}
+			
+			ul, ol {
+				list-style:none;
+			}
+			
+			.nav {
+				width:500px; /*Le establecemos un ancho*/
+				margin: -5px auto; /*Centramos automaticamente*/
+			}
+ 
+			.nav > li {
+				float:left;
+			}
+			
+			.nav li a {
+				background-color:#000;
+				color:#fff;
+				text-decoration:none;
+				padding:10px 20px;
+				display:block;
+			}
+			
+			.nav li a:hover {
+				background-color:#434343;
+			}
+			
+			.nav li ul {
+				display:none;
+				position:absolute;
+				min-width:140px;
+			}
+			
+			.nav li:hover > ul {
+				display:block;
+			}
+			
+			.nav li ul li {
+				position:relative;
+			}
+			
+			.nav li ul li ul {
+				right:-140px;
+				top:0px;
+			}
+	</style>
+</head>
+	
+	<body>
+		<div id="header">
+			<nav> <!-- Aqui estamos iniciando la nueva etiqueta nav -->
+				<ul class="nav">
+					<li><a href="http://127.0.0.1:5500/PAGINA%20NFL2.html">Inicio</a></li>
+					<li><a href="">Equipos</a>
+						<ul>
+							<li><a href="http://127.0.0.1:5500/GREEN%20BAY%20packers.html">Green Bay Packers</a></li>
+							<li><a href="http://127.0.0.1:5500/San%20francisco.html">San Francisco 49ers</a></li>
+							<li><a href="#">kansas City Chiefs</a></li>
+							
+
+							</li>
+						</ul>
+					</li>
+					<li><a href="http://127.0.0.1:5500/productos.html">Productos</a>
+					</li>
+					<li><a href="http://127.0.0.1:5500/Contacto.html">Contacto</a></li>
+				</ul>
+			</nav><!-- Aqui estamos cerrando la nueva etiqueta nav -->
+		</div>
+	</body>
+	<style type="text/css">
+	h4{text-align:left; text-decoration-color:"#FDFEFE";}	
+	</style>
+	<body>
+		<br>
+		<br>
+        <br>
+        <main class="contenedor seccion contenido-centrado">
+            <h2 class="fw-300 text-center">Llena el Formulario de Contacto</h2>
+    
+            <form action="">
+                <fieldset><!--sirve para ordenar todos los elementos con un contorno-->
+    
+                    <legend>Información Personal</legend>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" placeholder="Escribe tu Nombre">
+    
+                    <label for="e-mail">E-mail</label>
+                    <input type="email" id="e-mail" placeholder="Escribe tu E-mail" required>
+                    
+    
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" placeholder="Escribe tu Teléfono">
+    
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje"></textarea>
+    
+                </fieldset>
+                <input type="submit" value="Enviar" class="boton boton-verde">
+            </form>
+       </main>
+		
+	</body>
+</html>
